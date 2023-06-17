@@ -1,7 +1,7 @@
 # CodeLineLogger VS Code Extension
 
 <p align="center">
-  <img src="assets/codelinelogger-icon.png" alt="CodeLineLogger Icon" width="200">
+  <img src="assets/logo-dark.png" alt="CodeLineLogger Icon" width="200">
   <br>
   CodeLineLogger
 </p>
