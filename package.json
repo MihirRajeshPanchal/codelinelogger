@@ -12,10 +12,21 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "codelinelogger.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+        {
+            "command": "extension.wrapInLog",
+            "title": "Wrap in Log Statement"
+        }
+    ],
+    "keybindings": [
+          {
+              "command": "extension.wrapInLog",
+              "key": "ctrl+.",
+              "mac": "cmd+.",
+              "when": "editorTextFocus"
+          }
+      ]
+
   },
   "scripts": {
     "lint": "eslint .",
