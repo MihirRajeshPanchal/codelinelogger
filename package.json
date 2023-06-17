@@ -3,6 +3,26 @@
   "displayName": "codelinelogger",
   "description": "CodeLineLogger is a versatile VS Code extension that enables seamless line logging for multiple programming languages, enhancing debugging and analysis capabilities.",
   "version": "0.0.1",
+  "icon": "assets/logo-dark.png",
+  "publisher": "mihirpanchal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MihirRajeshPanchal/codelinelogger"
+  },
+  "keywords": [
+    "logger",
+    "logs",
+    "debug",
+    "debugger",
+    "shortcut",
+    "mihir",
+    "panchal",
+    "multilanguage",
+    "codelinelogger",
+    "linelogger",
+    "debug log",
+    "log"
+  ],
   "engines": {
     "vscode": "^1.79.0"
   },

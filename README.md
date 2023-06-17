@@ -1,65 +1,57 @@
-# codelinelogger README
+# CodeLineLogger VS Code Extension
 
-This is the README for your extension "codelinelogger". After writing up a brief description, we recommend including the following sections.
+<p align="center">
+  <img src="assets/codelinelogger-icon.png" alt="CodeLineLogger Icon" width="200">
+  <br>
+  CodeLineLogger
+</p>
+
+Welcome to the CodeLineLogger VS Code Extension! This extension enhances your coding experience by allowing you to seamlessly add line logging statements to your code in various programming languages.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Effortless Line Logging:** With a simple keyboard shortcut, you can wrap the selected line of code in a log statement, making debugging and analysis easier.
+- **Multi-Language Support:** CodeLineLogger supports multiple programming languages, including JavaScript, Python, Java, C#, Ruby, PHP, Go, Swift, Kotlin, C/C++, Rust, TypeScript, Lua, PowerShell, and Perl.
+- **Automatic Formatting:** The extension ensures that the log statement retains the original line's indentation, preserving code readability.
+- **Smart Log Statements:** Depending on the language and context, CodeLineLogger intelligently adds log statements specific to each language, such as `console.log` in JavaScript, `print` in Python, or `System.out.println` in Java.
+- **Selective Logging:** CodeLineLogger detects if the selected line is a function or object and adjusts the log statement accordingly, omitting quotes for non-string values.
+- **Semicolon Handling:** The extension takes care of adding or omitting semicolons at the end of log statements based on the language's syntax conventions.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Launch Visual Studio Code.
+2. Open the Extensions view by clicking on the square icon in the left sidebar or by pressing `Ctrl+Shift+X` (`Cmd+Shift+X` on macOS).
+3. Search for "CodeLineLogger" in the Extensions Marketplace.
+4. Click on the "Install" button for the CodeLineLogger VS Code Extension.
+5. Once installed, click on the "Reload" button to activate the extension.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
 
-## Requirements
+To wrap a selected line with a log statement using CodeLineLogger, follow these steps:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Select the desired line(s) in the editor.
+2. Press `Ctrl+.` (`Cmd+.` on macOS) to wrap the selected line with a log statement.
+3. CodeLineLogger will automatically add the appropriate log statement for the selected programming language, including proper formatting and context-aware behavior.
 
-## Extension Settings
+## Website 
+Please do visit our website for more information at [CodeLineLogger](https://codelinelogger.netlify.app/)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Feedback and Contributions
 
-For example:
+Feedback and contributions are highly appreciated! If you encounter any issues, have suggestions for improvements, or would like to contribute to the project, please visit the [GitHub repository](https://github.com/MihirRajeshPanchal/codelinelogger) for the CodeLineLogger VS Code Extension.
 
-This extension contributes the following settings:
+## License
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+This extension is released under the [MIT License](LICENSE).
 
-## Known Issues
+## Credits
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+The CodeLineLogger extension was created by [Mihir Panchal](https://github.com/MihirRajeshPanchal). Special thanks to the following contributors for their valuable input and support.
 
-## Release Notes
+<p align="start">
+<a  href="https://github.com/MihirRajeshPanchal/codelinelogger/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=MihirRajeshPanchal/codelinelogger"/>
+</a>
+</p>
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Thank you for choosing the CodeLineLogger VS Code Extension! We hope you find it useful and enjoy enhancing your debugging and analysis capabilities with seamless line logging. If you have any questions or need assistance, feel free to reach out. Happy coding!
