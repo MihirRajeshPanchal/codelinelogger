@@ -1,6 +1,6 @@
 const vscode = require('vscode');
 
-function isFunctionOrObject(lineText) {
+function isFunctionOrObject(lineText, languageId) {
   // Modify this function to define your custom logic for identifying functions or objects
   // For example, you can check if the line contains parentheses or curly braces
   return lineText.includes('(') || lineText.includes('{');
@@ -27,13 +27,13 @@ function activate(context) {
       go: { prefix: 'fmt.Println(', suffix: ')' },
       swift: { prefix: 'print(', suffix: ')' },
       kotlin: { prefix: 'println(', suffix: ')' },
-      c: { prefix: 'printf("', suffix: '\\n");' },
-      cpp: { prefix: 'printf("', suffix: '\\n");' },
+      c: { prefix: 'printf(', suffix: ');' },
+      cpp: { prefix: 'cout << ', suffix: ' << endl;' },
       rust: { prefix: 'println!("', suffix: '");' },
       typescript: { prefix: 'console.log(', suffix: ');' },
       lua: { prefix: 'print(', suffix: ')' },
       powershell: { prefix: 'Write-Host ', suffix: '' },
-      perl: { prefix: 'print "', suffix: '";' },
+      perl: { prefix: 'print ', suffix: ';' },
       // Add more languages as needed
     };
 
@@ -55,7 +55,7 @@ function activate(context) {
       }
       const indentation = ' '.repeat(minIndent);
       return selectedLines.map(line => {
-        const shouldWrapInQuotes = !isFunctionOrObject(line);
+        const shouldWrapInQuotes = !isFunctionOrObject(line, languageId);
         const lineContent = shouldWrapInQuotes ? `"${line}"` : line;
         return `${indentation}${logStatement.prefix}${lineContent}${logStatement.suffix}`;
       }).join('\n');
