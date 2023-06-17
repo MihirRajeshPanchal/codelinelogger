@@ -2,7 +2,7 @@
   "name": "codelinelogger",
   "displayName": "codelinelogger",
   "description": "CodeLineLogger is a versatile VS Code extension that enables seamless line logging for multiple programming languages, enhancing debugging and analysis capabilities.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "assets/logo-dark.png",
   "publisher": "mihirpanchal",
   "repository": {
@@ -33,20 +33,19 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [
-        {
-            "command": "extension.wrapInLog",
-            "title": "Wrap in Log Statement"
-        }
+      {
+        "command": "extension.wrapInLog",
+        "title": "Wrap in Log Statement"
+      }
     ],
     "keybindings": [
-          {
-              "command": "extension.wrapInLog",
-              "key": "ctrl+.",
-              "mac": "cmd+.",
-              "when": "editorTextFocus"
-          }
-      ]
-
+      {
+        "command": "extension.wrapInLog",
+        "key": "ctrl+.",
+        "mac": "cmd+.",
+        "when": "editorTextFocus"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
