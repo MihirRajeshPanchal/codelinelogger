@@ -9,7 +9,7 @@
 Welcome to the CodeLineLogger VS Code Extension! This extension enhances your coding experience by allowing you to seamlessly add line logging statements to your code in various programming languages.
 
 <p align="center">
-  <img src="assets/CodeLineLogger.gif" alt="CodeLineLogger Icon" width="200">
+  <img src="assets/CodeLineLogger.gif" alt="CodeLineLogger Icon" width="1000">
   <br>
   Working
 </p>
