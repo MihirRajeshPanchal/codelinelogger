@@ -27,7 +27,7 @@
     "vscode": "^1.79.0"
   },
   "categories": [
-    "Other"
+    "Debuggers"
   ],
   "activationEvents": [],
   "main": "./extension.js",
