@@ -34,6 +34,18 @@ function activate(context) {
       lua: { prefix: 'print(', suffix: ')' },
       powershell: { prefix: 'Write-Host ', suffix: '' },
       perl: { prefix: 'print ', suffix: ';' },
+      groovy: { prefix: 'println(', suffix: ')' },
+      scala: { prefix: 'println(', suffix: ')' },
+      dart: { prefix: 'print(', suffix: ');' },
+      shell: { prefix: 'echo ', suffix: '' },
+      vb: { prefix: 'Console.WriteLine(', suffix: ')' },
+      r: { prefix: 'cat(', suffix: ', sep="\\n")' },
+      elixir: { prefix: 'IO.puts(', suffix: ')' },
+      julia: { prefix: 'println(', suffix: ')' },
+      perl6: { prefix: 'say ', suffix: ';' },
+      crystal: { prefix: 'puts ', suffix: '' },
+      nim: { prefix: 'echo ', suffix: '' },
+      erlang: { prefix: 'io:format(', suffix: ', []).' },
       // Add more languages as needed
     };
 
@@ -77,7 +89,7 @@ function activate(context) {
   context.subscriptions.push(disposable);
 }
 
-function deactivate() {}
+function deactivate() { }
 
 module.exports = {
   activate,
